@@ -1,0 +1,44 @@
+{
+    "model_name": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "dataset_name": "glue",
+    "dataset_config": "sst2",
+    "n_shots": 8,
+    "n_scoring_queries": 50,
+    "n_eval_queries": 200,
+    "top_percent": 3.0,
+    "label_words": [
+        "positive",
+        "negative"
+    ],
+    "prompt_template": "{sentence} Sentiment: {label}",
+    "query_template": "{sentence} Sentiment:",
+    "demo_separator": "\n",
+    "seed": 42,
+    "batch_size": 1,
+    "use_fp16": true,
+    "epsilon": 1e-8,
+    "ablation_conditions": [
+        "baseline",
+        "tr_ablation",
+        "tl_ablation",
+        "ih_ablation",
+        "random_ablation"
+    ],
+    "percentile_thresholds": [
+        3,
+        5,
+        10,
+        20
+    ],
+    "output_dir": "outputs",
+    "cache_dir": "outputs/cache",
+    "scores_dir": "outputs/scores",
+    "plots_dir": "outputs/plots",
+    "tables_dir": "outputs/tables",
+    "summaries_dir": "outputs/summaries",
+    "plot_dpi": 300,
+    "plot_format": [
+        "png",
+        "pdf"
+    ]
+}
