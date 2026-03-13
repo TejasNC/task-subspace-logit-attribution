@@ -10,8 +10,8 @@
 
 \usepackage{amsmath,amsfonts,graphicx,algorithm,caption}
 \usepackage[noend]{algpseudocode}
+\usepackage[numbers]{natbib}
 \usepackage{hyperref}
-\usepackage{natbib}
 \usepackage[document]{ragged2e}
 \usepackage{mathtools}
 \usepackage{xcolor}
@@ -60,8 +60,6 @@
    \end{center}
    \vspace*{4mm}
 }
-
-\renewcommand{\cite}[1]{[#1]}
 
 \newcommand{\fig}[3]{
 			\vspace{#2}
@@ -615,19 +613,45 @@ We reproduced the core findings of \cite{TSLA} on SST-2 using \texttt{unsloth/Ll
 % ============================================================================
 \section{References} \label{sec:references}
 
-\begin{enumerate}
-    \item Ye, J.\ and Ren, X.\ (2024). ``Localizing Task Information in Large Language Models During In-Context Learning.'' In \textit{Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)}, 2024. \url{https://arxiv.org/abs/2410.24169}
+\begin{thebibliography}{9}
 
-    \item Elhage, N., Nanda, N., Olsson, C., Henighan, T., Joseph, N., Mann, B., Askell, A., Bai, Y., Chen, A., Conerly, T., DasSarma, N., Drain, D., Ganguli, D., Hatfield-Dodds, Z., Hernandez, D., Jones, A., Kernion, J., Lovitt, L., Ndousse, K., Amodei, D., Brown, T., Clark, J., Kaplan, J., McCandlish, S., and Olah, C.\ (2021). ``A Mathematical Framework for Transformer Circuits.'' \textit{Transformer Circuits Thread}, Anthropic. \url{https://transformer-circuits.pub/2021/framework/index.html}
+\bibitem{TSLA}
+Yang, H., Cho, H., and Inoue, N.\ (2025).
+``Localizing Task Recognition and Task Learning in In-Context Learning via Attention Head Analysis.''
+arXiv preprint arXiv:2509.24164 [cs.CL].
+\url{https://arxiv.org/abs/2509.24164}
 
-    \item Olsson, C., Elhage, N., Nanda, N., Joseph, N., DasSarma, N., Henighan, T., Mann, B., Askell, A., Bai, Y., Chen, A., Conerly, T., Drain, D., Ganguli, D., Hatfield-Dodds, Z., Hernandez, D., Johnston, S., Jones, A., Kernion, J., Lovitt, L., Ndousse, K., Amodei, D., Brown, T., Clark, J., Kaplan, J., McCandlish, S., and Olah, C.\ (2022). ``In-context Learning and Induction Heads.'' \textit{Transformer Circuits Thread}, Anthropic. \url{https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html}
+\bibitem{TransformerCircuits}
+Elhage, N., Nanda, N., Olsson, C., Henighan, T., Joseph, N., Mann, B., Askell, A., Bai, Y., Chen, A., Conerly, T., DasSarma, N., Drain, D., Ganguli, D., Hatfield-Dodds, Z., Hernandez, D., Jones, A., Kernion, J., Lovitt, L., Ndousse, K., Amodei, D., Brown, T., Clark, J., Kaplan, J., McCandlish, S., and Olah, C.\ (2021).
+``A Mathematical Framework for Transformer Circuits.''
+\textit{Transformer Circuits Thread}, Anthropic.
+\url{https://transformer-circuits.pub/2021/framework/index.html}
 
-    \item Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., Cistac, P., Rault, T., Louf, R., Funtowicz, M., Davison, J., Shleifer, S., von Platen, P., Ma, C., Jernite, Y., Plu, J., Xu, C., Le Scao, T., Gugger, S., Dour, M., Lhoest, Q., and Rush, A.~M.\ (2020). ``Transformers: State-of-the-Art Natural Language Processing.'' In \textit{Proceedings of the 2020 Conference on EMNLP: System Demonstrations}, pp.\ 38--45. \url{https://huggingface.co/docs/transformers}
+\bibitem{InductionHeads}
+Olsson, C., Elhage, N., Nanda, N., Joseph, N., DasSarma, N., Henighan, T., Mann, B., Askell, A., Bai, Y., Chen, A., Conerly, T., Drain, D., Ganguli, D., Hatfield-Dodds, Z., Hernandez, D., Johnston, S., Jones, A., Kernion, J., Lovitt, L., Ndousse, K., Amodei, D., Brown, T., Clark, J., Kaplan, J., McCandlish, S., and Olah, C.\ (2022).
+``In-context Learning and Induction Heads.''
+\textit{Transformer Circuits Thread}, Anthropic.
+\url{https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html}
 
-    \item Dettmers, T., Pagnoni, A., Holtzman, A., and Zettlemoyer, L.\ (2023). ``QLoRA: Efficient Finetuning of Quantized Language Models.'' In \textit{Advances in Neural Information Processing Systems (NeurIPS)}, 2023. \url{https://arxiv.org/abs/2305.14314}
+\bibitem{TransformersLibrary}
+Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., Cistac, P., Rault, T., Louf, R., Funtowicz, M., Davison, J., Shleifer, S., von Platen, P., Ma, C., Jernite, Y., Plu, J., Xu, C., Le Scao, T., Gugger, S., Dour, M., Lhoest, Q., and Rush, A.~M.\ (2020).
+``Transformers: State-of-the-Art Natural Language Processing.''
+In \textit{Proceedings of the 2020 Conference on EMNLP: System Demonstrations}, pp.\ 38--45.
+\url{https://huggingface.co/docs/transformers}
 
-    \item Unsloth.\ \texttt{unsloth/Llama-3.2-3B-Instruct-bnb-4bit}. Hugging Face model repository. \url{https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit}. Accessed: March 2026.
-\end{enumerate}
+\bibitem{QLoRA}
+Dettmers, T., Pagnoni, A., Holtzman, A., and Zettlemoyer, L.\ (2023).
+``QLoRA: Efficient Finetuning of Quantized Language Models.''
+In \textit{Advances in Neural Information Processing Systems (NeurIPS)}, 2023.
+\url{https://arxiv.org/abs/2305.14314}
+
+\bibitem{UnslothLlama}
+Unsloth.\ \texttt{unsloth/Llama-3.2-3B-Instruct-bnb-4bit}.
+Hugging Face model repository.
+\url{https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit}.
+Accessed: March 2026.
+
+\end{thebibliography}
 
 % ============================================================================
 % APPENDIX
