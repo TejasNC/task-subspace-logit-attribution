@@ -72,16 +72,6 @@ Edit `configs/default_config.json` to change:
 - A GPU with >= 8 GB VRAM (Kaggle T4 works with 4-bit quantization)
 - No gated model access required (uses the public `unsloth/Llama-3.2-3B-Instruct-bnb-4bit` checkpoint)
 
-## Key Results (Expected)
-
-| Metric | TR vs IH | TL vs IH | TR vs TL |
-|--------|----------|----------|----------|
-| Jaccard | Higher | Lower | Low |
-| Kendall τ | Higher | Lower | Low |
-| Spearman ρ | Higher | Lower | Low |
-
-TR heads and IH should overlap substantially, confirming that task recognition is mechanistically linked to induction-style attention patterns.
-
 ## License
 
 Research reproduction — for educational and academic use.
